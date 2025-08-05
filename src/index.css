@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .rhythm-button {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200;
+  }
+
+  .game-container {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900;
+  }
+}
